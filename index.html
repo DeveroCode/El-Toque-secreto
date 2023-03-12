@@ -6,10 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./Assets/css/app.css">
     <title>El Toque Secreto</title>
 </head>
 <body>
     
+    <!-- Header and Navbar -->
+    <section class="background">
+        <div class="py-4">
+            <div class="navbar navbar-expand-lg container navbar-light">
+                <div class="col-md-6">
+                    <a href="index.html" class="navbar-brand text-white">
+                        <h2 class="display-5 mt-2 fw-bold">El Toque Secreto</h2></a>
+                </div>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Ocultar -->
+                <div id="navegacion" class="collapse navbar-collapse">
+                    <nav class="navbar-nav container text-center d-flex justify-content-between">
+                        <a class="text-white text-decoration-none" href="#">Home</a>
+                        <a class="text-white text-decoration-none" href="#">Menu</a>
+                        <a class="text-white text-decoration-none" href="#">About Us</a>
+                        <span class="text-white">
+                            <i class="bi bi-whatsapp"></i>
+                            (+52) 636 123 4567
+                        </span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <main class="container mt-5 main">
+            <h1 class="text-white text-center display-1 fw-bold">El Toque Secreto</h1>
+            <p class="text-white text-center main__sub fs-4">Nuestro equipo de chefs talentosos y apasionados, junto con nuestro personal amable y atento, están comprometidos en brindar un servicio excepcional y una experiencia memorable para cada cliente que visite nuestro restaurante.</p>
+            <div class="d-flex justify-content-center gap-5">
+                <a href="#" class="btn btn-warning btn-lg mt-5 fs-4 text-white text-uppercase">Reservar</a>
+                <a href="#" class="btn btn-outline-warning btn-lg mt-5 fs-4 text-uppercase">Menu</a>
+            </div>
+        </main>
+    </section>
+    
+    <!-- Start section about -->
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-3 mt-6">
+                <img src="./Assets/imgs/about.jpg" class="img-fluid img" alt="imagen about">
+            </div>
+            <div class="col-md-9 mt-6 about">
+                <div class="about-content">
+                    <span class="text-start fs-1 text-uppercase fw-bold text-primary">About Us</span>
+                    <h2 class="display-3 fw-semibold">Una pequeña informacion para nuestros visitantes</h2>
+                    <p class="text-muted fs-5">Creemos que la comida no solo debe ser deliciosa, sino también una obra de arte. Por eso, nos esforzamos en presentar cada plato de manera hermosa y atractiva, para que nuestros clientes puedan disfrutar de una experiencia culinaria completa.
+                    </p>
+                </div>
+                <div class="about-statistics d-flex flex-row py-4 mt-5">
+                    <div class="col-md-4">
+                        <p class="fw-bold display-3">150<span class="text-primary">+</span></p>
+                        <span class="text-muted">Restaurnates</span>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="fw-bold display-3">32<span class="text-primary">+</span></p>
+                        <span class="text-muted">años de experiencia</span>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="fw-bold display-3">90<span class="text-primary">+</span></p>
+                        <span class="text-muted">Platillos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Js Bootstrap -->
