@@ -1,0 +1,23 @@
+@import url(/Assets/css/app.css);
+
+.swiper {
+  width: 100%;
+  height: 25rem !important;
+}
+
+.bg-danger{
+  background-color: var(--color-secondary) !important;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 20rem;
+  background-size: cover;
+}
