@@ -40,6 +40,14 @@ span{
     cursor:default !important;
 }
 
+main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Assets */
 .fw-semibold{
     font-weight: 600;
