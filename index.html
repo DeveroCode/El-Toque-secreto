@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,17 +12,19 @@
     <link rel="stylesheet" href="./Assets/css/app.css">
     <title>El Toque Secreto</title>
 </head>
+
 <body>
-    
+
     <!-- Header and Navbar -->
     <section class="background">
         <div class="py-4">
             <div class="navbar navbar-expand-lg container navbar-light">
                 <div class="col-md-6">
                     <a href="index.html" class="navbar-brand text-white">
-                        <h2 class="display-5 mt-2 fw-bold">El Toque Secreto</h2></a>
+                        <h2 class="display-5 mt-2 fw-bold">El Toque Secreto</h2>
+                    </a>
                 </div>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navegacion">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Ocultar -->
@@ -42,29 +45,33 @@
         <main class="container mt-5">
             <div class="main-info d-flex flex-column justify-content-center align-items-center">
                 <h1 class="text-white text-center display-1 fw-bold">El Toque Secreto</h1>
-                <p class="text-white text-center main__sub fs-4">Nuestro equipo de chefs talentosos y apasionados, junto con nuestro personal amable y atento, están comprometidos en brindar un servicio excepcional y una experiencia memorable para cada cliente que visite nuestro restaurante.</p>
-                <div class="d-flex justify-content-center gap-5">
+                <p class="text-white text-center main__sub fs-3">Nuestro equipo de chefs talentosos y apasionados, junto
+                    con nuestro personal amable y atento, están comprometidos en brindar un servicio excepcional y una
+                    experiencia memorable para cada cliente que visite nuestro restaurante.</p>
+                <div class="buttons">
                     <a href="#" class="btn btn-warning btn-lg mt-5 fs-4 text-white text-uppercase">Reservar</a>
-                    <a href="#" class="btn btn-outline-warning btn-lg mt-5 fs-4 text-uppercase">Menu</a>
+                    <a href="#" class="btn btn-outline-warning btn-lg mt-5 fs-4 text-uppercase mx-5">Menu</a>
                 </div>
             </div>
         </main>
     </section>
-    
-    <!-- Start section about -->
+
+    <!-- Start section guest -->
     <div class="container py-4">
-        <div class="row">
-            <div class="col-md-3 mt-6 d-md-block d-none">
+        <div class="row mt-6">
+            <div class="col-md-3 order-md-1 mb-4 d-none d-md-block img-container">
                 <img src="./Assets/imgs/about.jpg" class="img-fluid img" alt="imagen about">
             </div>
-            <div class="col-md-9 mt-6 about">
+            <div class="col-md-9 order-md-2 mt-5 py-5 about">
                 <div class="about-content">
                     <span class="text-start fs-1 text-uppercase fw-bold text-primary">About Us</span>
                     <h2 class="display-3 fw-semibold">Una pequeña informacion para nuestros visitantes</h2>
-                    <p class="text-muted fs-5">Creemos que la comida no solo debe ser deliciosa, sino también una obra de arte. Por eso, nos esforzamos en presentar cada plato de manera hermosa y atractiva, para que nuestros clientes puedan disfrutar de una experiencia culinaria completa.
+                    <p class="text-muted fs-5">Creemos que la comida no solo debe ser deliciosa, sino también una obra
+                        de arte. Por eso, nos esforzamos en presentar cada plato de manera hermosa y atractiva, para que
+                        nuestros clientes puedan disfrutar de una experiencia culinaria completa.
                     </p>
                 </div>
-                <div class="about-statistics d-flex flex-row py-4 mt-5">
+                <div class="about-statistics row py-4 mt-5">
                     <div class="col-md-4">
                         <p class="fw-bold display-3">150<span class="text-primary">+</span></p>
                         <span class="text-muted">Restaurnates</span>
@@ -82,12 +89,17 @@
         </div>
     </div>
 
+
+
     <!-- bests foods -->
-    <div class="bg-danger food-section">
+    <div class="bg-danger food-section mt-6">
         <div class="container py-4">
             <div class="food-information d-flex justify-content-between flex-column flex-md-row mt-6">
-                <h2 class="display-3 fw-bold w-md-50">Nuestra <span class="text-primary">mejor categoria</span> de entrega</h2>
-                <p class="slogan mt-3 w-md-50">no solo nos preocupamos por ofrecerte una deliciosa comida en tus entregas, sino que también nos esforzamos por brindarte una experiencia inolvidable en cada envío. ¡Déjanos sorprenderte con cada pedido!</p>
+                <h2 class="display-3 fw-bold w-md-50 w-100">Nuestra <span class="text-primary">mejor categoria</span> de
+                    entrega</h2>
+                <p class="slogan mt-3 w-md-50 w-100">no solo nos preocupamos por ofrecerte una deliciosa comida en tus
+                    entregas, sino que también nos esforzamos por brindarte una experiencia inolvidable en cada envío.
+                    ¡Déjanos sorprenderte con cada pedido!</p>
             </div>
             <div class="food-images d-flex justify-content-between flex-column flex-lg-row">
                 <div class="images text-center mt-6">
@@ -116,9 +128,10 @@
             </div>
         </div>
     </div>
-      
+
 
     <!-- Js Bootstrap -->
     <script src="./Assets/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
