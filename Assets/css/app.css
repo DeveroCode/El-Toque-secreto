@@ -81,6 +81,10 @@ main{
     background-color: var(--color-secondary) !important;
 }
 
+.w-md-50{
+    width: 50% !important;
+}
+
 /* Start my styles */
 /* -> Header background */
 .background{
@@ -122,9 +126,6 @@ main{
 }
 
 /* -> Bets foods */
-/* .food-section{
-    height: 50rem !important;
-} */
 .images > img{
     width: 20rem;
 }
