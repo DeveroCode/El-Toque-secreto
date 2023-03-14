@@ -5,7 +5,7 @@
     --font-family: 'Poppins', sans-serif;
     --color-primary:#e4811f;
     --darkPrimary: #CD853F;
-    --color-secondary: #ece6e6;
+    --color-secondary: #f2f2f2;
 }
 
 html{
@@ -40,6 +40,15 @@ span{
     cursor:default !important;
 }
 
+/* Assets */
+.fw-semibold{
+    font-weight: 600;
+}
+
+.mt-6{
+    margin-top: 10rem;
+}
+
 .text-primary{
     color: var(--color-primary) !important;
 }
@@ -60,13 +69,8 @@ span{
     color: white !important;
 }
 
-/* Assets */
-.fw-semibold{
-    font-weight: 600;
-}
-
-.mt-6{
-    margin-top: 10rem;
+.bg-danger{
+    background-color: var(--color-secondary) !important;
 }
 
 /* Start my styles */
@@ -95,7 +99,7 @@ span{
     padding: 20rem;
 }
 
-/* -> About us */
+/* -> Guest infromation */
 .img{
     height: 50rem;
 }
@@ -107,4 +111,12 @@ span{
 .about .about-content p{
     margin-right: 14rem;
     text-align: justify;
+}
+
+/* -> Bets foods */
+/* .food-section{
+    height: 50rem !important;
+} */
+.images > img{
+    width: 20rem;
 }
