@@ -57,6 +57,10 @@ main{
     margin-top: 10rem;
 }
 
+.mb-6{
+    margin-bottom: 10rem;
+}
+
 .text-primary{
     color: var(--color-primary) !important;
 }
@@ -122,15 +126,4 @@ main{
     width: 20rem;
 }
 
-/* @media (min-width: 375px) {
-    .about {
-        padding: 0;
-    }
-}
-  
-@media (min-width: 768px) {
-    .about {
-        padding: 0 10rem;
-    }
-} */
-  
+/* -> About Us */
