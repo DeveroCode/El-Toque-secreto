@@ -6,6 +6,7 @@
     --color-primary:#e4811f;
     --darkPrimary: #CD853F;
     --color-secondary: #f2f2f2;
+    --color-dark: #121212;
 }
 
 html{
@@ -85,6 +86,14 @@ main{
     background-color: var(--color-secondary) !important;
 }
 
+.btn-secondary{
+    background-color: var(--color-primary) !important;
+    border: none;
+}
+
+.bg-dark{
+    background-color: var(--color-dark) !important;
+}
 .w-md-50{
     min-width: 50% !important;
 }
