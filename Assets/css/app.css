@@ -29,6 +29,11 @@ h1, h2, h3{
 
 a{
     font-size: 1.7rem;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    color: var(--color-primary) !important;
 }
 
 body{
@@ -134,5 +139,3 @@ main{
 .images > img{
     width: 20rem;
 }
-
-/* -> About Us */
