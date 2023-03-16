@@ -67,6 +67,10 @@ main{
     margin-bottom: 10rem;
 }
 
+.logo:hover{
+    color: var(--color-secondary) !important;
+}
+
 .text-primary{
     color: var(--color-primary) !important;
 }
