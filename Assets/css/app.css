@@ -67,10 +67,6 @@ main{
     margin-bottom: 10rem;
 }
 
-.logo:hover{
-    color: var(--color-secondary) !important;
-}
-
 .text-primary{
     color: var(--color-primary) !important;
 }
@@ -78,6 +74,10 @@ main{
 .btn-warning{
     background-color: var(--color-primary) !important;
     border: none;
+}
+
+.btn-warning:hover{
+    color: var(--color-secondary) !important;
 }
 
 .btn-outline-warning{
@@ -128,6 +128,16 @@ main{
     opacity: 0.6;
     z-index: -1;
 }
+ /* -> Header */
+ .stick{
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.tag{
+    color: var(--color-dark);
+}
+
 /* -> Main */
 .main{
     padding: 20rem;
@@ -142,4 +152,8 @@ main{
 /* -> Bets foods */
 .images > img{
     width: 20rem;
+}
+
+.body-scroll{
+    padding-top: 8.6rem;
 }

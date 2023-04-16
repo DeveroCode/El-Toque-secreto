@@ -14,14 +14,13 @@
 </head>
 
 <body>
-
     <!-- Header and Navbar -->
     <section class="background">
-        <div class="py-4">
+        <header class="py-4" id="header">
             <div class="navbar navbar-expand-lg container navbar-light">
                 <div class="col-md-6">
                     <a href="index.html" class="navbar-brand logo text-white">
-                        <h2 class="display-5 fw-bold mt-4">El Toque Secreto</h2>
+                        <h2 class="display-5 fw-bold mt-4 logo">El Toque Secreto</h2>
                     </a>
                 </div>
                 <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navegacion">
@@ -29,18 +28,18 @@
                 </button>
                 <!-- Ocultar -->
                 <div id="navegacion" class="collapse navbar-collapse">
-                    <nav class="navbar-nav container text-center d-flex justify-content-between">
-                        <a class="text-white text-decoration-none" href="#">Home</a>
-                        <a class="text-white text-decoration-none" href="#">Menu</a>
-                        <a class="text-white text-decoration-none" href="#">About Us</a>
-                        <span class="text-white">
+                    <nav class="navbar-nav container d-flex justify-content-between align-items-center" id="navegacion">
+                        <a class="text-white text-decoration-none link" href="index.html">Home</a>
+                        <a class="text-white text-decoration-none link" href="#">Menu</a>
+                        <a class="text-white text-decoration-none link" href="#about-us">About Us</a>
+                        <span class="text-white link">
                             <i class="bi bi-whatsapp"></i>
                             (+52) 636 123 4567
                         </span>
                     </nav>
                 </div>
             </div>
-        </div>
+        </header>
 
         <main class="container mt-5">
             <div class="main-info d-flex flex-column justify-content-center align-items-center">
@@ -57,7 +56,7 @@
     </section>
 
     <!-- Start section guest -->
-    <div class="container py-4">
+    <div class="container py-4 guest" id="guest-info">
         <div class="row mt-5">
             <div class="col-md-3 order-md-1 mb-4 d-none d-md-block img-container">
                 <img src="./Assets/imgs/about.jpg" class="img-fluid img" alt="imagen about">
@@ -133,7 +132,7 @@
           <div class="col-md-5 order-md-2 mb-4 d-flex justify-content-center justify-content-md-end align-items-center">
             <img src="./Assets/imgs/about-2.jpg" class="img-fluid img" alt="imagen about">
           </div>
-          <div class="col-md-7 order-md-1 mt-5 py-5 about">
+          <div class="col-md-7 order-md-1 mt-5 py-5 about" id="about-us">
             <div class="about-content">
               <span class="text-start fs-1 text-uppercase fw-bold text-primary">Sobre nosotros</span>
               <h2 class="display-3 fw-semibold">Transforma tu paladar con nuestros deliciosos platillos</h2>
@@ -207,10 +206,11 @@
     </div>
       
 
+    <!-- Header Js -->
+    <script src="./Assets/js/header.js"></script>
     <!-- Js Bootstrap -->
     <script src="./Assets/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/85d631ed4b.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
