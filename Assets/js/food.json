@@ -1,0 +1,70 @@
+{
+    "comidas":[
+        {
+            "nombre": "Pizza Italiana",
+            "precio": 100,
+            "ingredientes": [
+                "Queso",
+                "Tomate",
+                "Jamón",
+                "Aceitunas"
+            ],
+            "imagen": "../../Assets/imgs/foods/pizza-italiana.png"
+        },
+        {
+            "nombre": "Pizza Alemana de Salchicha",
+            "precio": 250,
+            "ingredientes": [
+                "Cebolla",
+                "Tomate",
+                "Jamón",
+                "Salchicha"
+            ],
+            "imagen": "../../Assets/imgs/foods/pizza-alemana.png"
+        },
+        {
+            "nombre": "Pizza Hwaiiana",
+            "precio": 200,
+            "ingredientes": [
+                "Queso",
+                "Tomate",
+                "Jamón",
+                "Piña"
+            ],
+            "imagen": "../../Assets/imgs/foods/pizza-hawaiian.png"
+        },
+        {
+            "nombre": "Ensalada griega",
+            "precio": 150,
+            "ingredientes": [
+                "Pepino",
+                "Tomate",
+                "Cebolla roja",
+                "Aceitunas"
+            ],
+            "imagen": "../../Assets/imgs/foods/ensalada-griega.png"
+        },
+        {
+            "nombre": "Ensalada de mariscos",
+            "precio": 300,
+            "ingredientes": [
+                "Pepino",
+                "Tomate",
+                "Aceitunas",
+                "Mariscos"
+            ],
+            "imagen": "../../Assets/imgs/foods/ensalada-mariscos.png"
+        },
+        {
+            "nombre": "Ensalada de salmon",
+            "precio": 350,
+            "ingredientes": [
+                "Lechuga",
+                "Tomate",
+                "Cebolla morada",
+                "Salmon"
+            ],
+            "imagen": "../../Assets/imgs/foods/salmon-en-ensalada.png"
+        }
+    ]
+}
