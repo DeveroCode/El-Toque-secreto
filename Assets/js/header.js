@@ -30,7 +30,8 @@ function scrollHeader() {
     window.addEventListener('scroll', function () {
         // console.log(guest.getBoundingClientRect());
         if (guest.getBoundingClientRect().bottom < 832) {
-            header.classList.add('stick', 'fixed-top', 'w-100', 'shadow', 'bg-white', 'text-warning', 'py-4');
+            header.classList.add('stick', 'fixed-top', 'w-100', 'shadow', 'bg-white', 'text-warning');
+            header.classList.remove('py-4');
             logo.classList.add('tag');
             logo.classList.remove('text-white');
             enlaces.forEach(enlace => {
