@@ -34,3 +34,17 @@ h1, h2, h3{
     font-family: var(--font-family);
     font-weight: 700;
 }
+
+.stick{
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+a{
+    font-size: 1.7rem;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    color: var(--color-primary) !important;
+}

@@ -24,8 +24,9 @@ function scrollNav() {
 function scrollHeader() {
     const header = document.querySelector('#header');
     const enlaces = document.querySelectorAll('.link');
+    const links = document.querySelector('.links');
     const logo = document.querySelector('.logo');
-    const guest = document.querySelector('#guest-info');
+    const guest = document.querySelector('#second-block');
 
     window.addEventListener('scroll', function () {
         // console.log(guest.getBoundingClientRect());
@@ -37,6 +38,11 @@ function scrollHeader() {
             enlaces.forEach(enlace => {
                 enlace.classList.add('tag');
                 enlace.classList.remove('text-white');
+            });
+
+            links.forEach(link => {
+                link.classList.add('text-dark');
+                link.classList.add('tag');
             });
         } else {
             header.classList.remove('stick', 'fixed-top', 'w-100', 'shadow', 'bg-white', 'text-warning');

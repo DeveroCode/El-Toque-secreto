@@ -1,3 +1,5 @@
+@import url(./config.css);
+
 .link{
     font-size: 1.7rem;
     transition: all 0.3s ease;
@@ -5,6 +7,11 @@
 
 .link:hover{
     color: var(--color-primary) !important;
+}
+
+.btn-primary{
+    background-color: var(--color-primary) !important;
+    border: none!important;
 }
 
 .title{

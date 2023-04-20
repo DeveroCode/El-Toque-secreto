@@ -1,12 +1,3 @@
-a{
-    font-size: 1.7rem;
-    transition: all 0.3s ease;
-}
-
-a:hover{
-    color: var(--color-primary) !important;
-}
-
 body{
     font-family: var(--font-family);
     font-size: 1.5rem;
@@ -98,11 +89,6 @@ main{
     background-color: black;
     opacity: 0.6;
     z-index: -1;
-}
- /* -> Header */
- .stick{
-    z-index: 1;
-    transition: all 0.5s ease;
 }
 
 .tag{
