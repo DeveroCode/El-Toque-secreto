@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     startApp();
 });
 
-function startApp(){
+function startApp() {
     scrollHeader();
     scrollNav();
     foods();
@@ -24,7 +24,6 @@ function scrollNav() {
 function scrollHeader() {
     const header = document.querySelector('#header');
     const enlaces = document.querySelectorAll('.link');
-    const links = document.querySelector('.links');
     const logo = document.querySelector('.logo');
     const guest = document.querySelector('#second-block');
 
@@ -39,11 +38,6 @@ function scrollHeader() {
                 enlace.classList.add('tag');
                 enlace.classList.remove('text-white');
             });
-
-            links.forEach(link => {
-                link.classList.add('text-dark');
-                link.classList.add('tag');
-            });
         } else {
             header.classList.remove('stick', 'fixed-top', 'w-100', 'shadow', 'bg-white', 'text-warning');
             logo.classList.remove('tag');
@@ -56,19 +50,17 @@ function scrollHeader() {
     });
 }
 
-function obtenerDatosFoods(){
-    return fetch('../../Assets/js/food.json')
-    .then(response => response.json())
-    .then(data => {
-        // Aquí puedes acceder a los datos del archivo JSON
-        return Promise.resolve(data);
-    });
+async function obtenerDatosFoods() {
+    const response = await fetch('../../Assets/js/food.json');
+    const data = await response.json();
+    return await Promise.resolve(data);
 }
 
-function foods(){
+
+function foods() {
     obtenerDatosFoods().then(data => {
         data.comidas.forEach(food => {
-            if(food.nombre === 'Pizza Italiana' || food.nombre === 'Ensalada griega' || food.nombre === 'Ensalada de mariscos' || food.nombre === 'Ensalada de salmon'){
+            if (food.nombre === 'Pizza Italiana' || food.nombre === 'Ensalada griega' || food.nombre === 'Ensalada de mariscos' || food.nombre === 'Ensalada de salmon') {
                 const father = document.querySelector('.food-images');
                 const div = document.createElement('div');
                 const img = document.createElement('img');
@@ -77,16 +69,14 @@ function foods(){
 
                 p.textContent = food.nombre;
                 img.src = food.imagen;
-                img.alt = 'Imagen de' + ' ' +food.nombre;
+                img.alt = 'Imagen de' + ' ' + food.nombre;
                 a.href = '#';
                 a.textContent = 'Ordena ahora';
-                console.log(food.nombre);
 
                 div.classList.add('images', 'text-center', 'mt-6');
                 p.classList.add('mt-2', 'fs-2', 'fw-bold');
                 a.classList.add('mb-2', 'fs-4', 'text-uppercase', 'text-primary');
 
-                
                 div.appendChild(img);
                 div.appendChild(p);
                 div.appendChild(a);
@@ -95,5 +85,13 @@ function foods(){
         });
     });
 }
-    
-  
+
+function menuAll() {
+    obtenerDatosFoods().then(data => {
+        data.comidad.forEach(food => {
+            console.log(food);
+        })
+    })
+}
+
+
