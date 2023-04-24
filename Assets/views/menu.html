@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,16 +12,18 @@
     <link rel="stylesheet" href="../css/config.css">
     <title>El Toque Secreto - Menu</title>
 </head>
+
 <body>
     <!-- Header and Navbar -->
-    <header id="header">
+    <header>
         <div class="navbar navbar-expand-lg container navbar-light">
             <div class="col-md-6">
-                <a href="index.html" class="navbar-brand logo text-dark">
+                <a href="../../index.html" class="navbar-brand logo text-dark">
                     <h2 class="display-4 fw-bold mt-4 logo text-dark">El Toque Secreto</h2>
                 </a>
             </div>
-            <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navegacion">
+            <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse"
+                data-bs-target="#navegacion">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Ocultar -->
@@ -28,7 +31,7 @@
                 <nav class="navbar-nav container d-flex justify-content-between align-items-center" id="navegacion">
                     <a class="text-dark text-decoration-none links" href="../../index.html">Home</a>
                     <a class="text-dark text-decoration-none links" href="./menu.html">Menu</a>
-                    <a class="text-dark text-decoration-none links" href="#about-us">About Us</a>
+                    <a class="text-dark text-decoration-none links" href="../../index.html#about-us">About Us</a>
                     <span class="text-dark links">
                         <i class="fa-brands fa-whatsapp fs-4 fw-bold"></i>
                         (+52) 636 123 4567
@@ -37,9 +40,9 @@
             </div>
         </div>
     </header>
-    
+
     <!-- Background -->
-    <div class="flex flex-column col-12 container-xl">
+    <div class="d-flex flex-column col-12 container-xl mb-6">
         <div class="row">
             <div class="col-md-6 flex flex-column title">
                 <h1 class="display-1 fw-bold">No es solo una simple comida, es experiencia</h1>
@@ -53,36 +56,28 @@
             </div>
         </div>
     </div>
-    
-    <!-- Menu -->
-    <main class="container-xl mt-5" id="second-block">
-        <div class="row p-5 py-5">
-            <div class="bg-white shadow col-4">
-                <div class="image">
-                    <img src="../imgs/foods/ensalada-mariscos.png" alt="Imagen ensalada" class="img-fluid">
-                </div>
 
-                <div class="text flex">
-                    <h2 class="text-center">Ensalada griega</h2>
-                    <p class=" text-black-50 text-center">Ingredientes</p>
-                    <div class="text-more px-5">
-                        <p class="fw-bold"><span class="text-primary">$</span> 250</p>
-                        <a href="#" class="btn btn-primary fs-5">Agregar</a>
-                    </div>
-                </div>
+    <!-- Menu -->
+    <main class="container-xl mt-5 col-12">
+        <div class="row pb-5 mb-4 py-6">
+            <div
+                class="d-flex flex-column flex-md-row flex-wrap gap-5 justify-content-center container-cards w-100 py-7">
+                <!-- Cards foods -->
             </div>
         </div>
+        </div>
     </main>
-    
-    
 
-      
+
+
+
 
     <!-- Header Js -->
-    <script src="../js/header.js"></script>
+    <script type="module" src="../js/menu.js"></script>
     <!-- Js Bootstrap -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/85d631ed4b.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
