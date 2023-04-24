@@ -1,3 +1,5 @@
+import data from '../../Assets/js/food.json' assert { type: "json" };
+
 document.addEventListener('DOMContentLoaded', function () {
     startApp();
 });
@@ -5,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function startApp() {
     scrollHeader();
     scrollNav();
-    foods();
+    getFoods();
 }
 
 function scrollNav() {
@@ -50,48 +52,22 @@ function scrollHeader() {
     });
 }
 
-async function obtenerDatosFoods() {
-    const response = await fetch('../../Assets/js/food.json');
-    const data = await response.json();
-    return await Promise.resolve(data);
-}
+export function getFoods() {
+    const arrayFood = Object.values(data.comidas);
 
+    arrayFood.forEach(element => {
+        if (element.nombre === 'Pizza Italiana' || element.nombre === 'Ensalada griega' || element.nombre === 'Ensalada de mariscos' || element.nombre === 'Ensalada de salmon') {
+            const card = document.createRange().createContextualFragment(`
+            <div class="images text-center mt-6">
+                <img src="${element.imagen}" alt="comida ${element.nombre}" class="img-fluid">
+                <p class="mt-2 fs-2 fw-bold">${element.nombre}</p>
+                <a href="#" class="mb-2 fs-4 text-uppercase text-primary">Ordena ahora!</a>
+            </div>
+            `)
+            const main = document.querySelector('.container-foods   ');
+            main.appendChild(card);
 
-function foods() {
-    obtenerDatosFoods().then(data => {
-        data.comidas.forEach(food => {
-            if (food.nombre === 'Pizza Italiana' || food.nombre === 'Ensalada griega' || food.nombre === 'Ensalada de mariscos' || food.nombre === 'Ensalada de salmon') {
-                const father = document.querySelector('.food-images');
-                const div = document.createElement('div');
-                const img = document.createElement('img');
-                const p = document.createElement('p');
-                const a = document.createElement('a');
+        }
 
-                p.textContent = food.nombre;
-                img.src = food.imagen;
-                img.alt = 'Imagen de' + ' ' + food.nombre;
-                a.href = '#';
-                a.textContent = 'Ordena ahora';
-
-                div.classList.add('images', 'text-center', 'mt-6');
-                p.classList.add('mt-2', 'fs-2', 'fw-bold');
-                a.classList.add('mb-2', 'fs-4', 'text-uppercase', 'text-primary');
-
-                div.appendChild(img);
-                div.appendChild(p);
-                div.appendChild(a);
-                father.appendChild(div);
-            }
-        });
     });
 }
-
-function menuAll() {
-    obtenerDatosFoods().then(data => {
-        data.comidad.forEach(food => {
-            console.log(food);
-        })
-    })
-}
-
-
