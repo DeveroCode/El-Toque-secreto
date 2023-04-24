@@ -1,50 +1,63 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
-:root{
+:root {
     --font-family: 'Poppins', sans-serif;
-    --color-primary:#e4811f;
+    --color-primary: #e4811f;
     --darkPrimary: #CD853F;
     --color-secondary: #f2f2f2;
     --color-dark: #121212;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-.bg-primary{
+.bg-primary {
     background-color: var(--color-primary) !important;
 }
 
-.text-primary{
-  color: var(--color-primary) !important;
+.text-primary {
+    color: var(--color-primary) !important;
 }
 
-span{
+.img-size {
+    height: 15rem !important;
+    width: 15rem !important;
+    margin: 0 auto;
+}
+
+.py-7 {
+    padding-top: 10rem !important;
+    padding-bottom: 7rem !important;
+}
+
+span {
     cursor: pointer;
 }
 
-body{
+body {
     font-family: var(--font-family);
     font-size: 1.6rem;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: var(--font-family);
     font-weight: 700;
 }
 
-.stick{
+.stick {
     z-index: 1;
     transition: all 0.5s ease;
 }
 
-a{
+a {
     font-size: 1.7rem;
     transition: all 0.3s ease;
 }
 
-a:hover{
+a:hover {
     color: var(--color-primary) !important;
 }
