@@ -1,14 +1,16 @@
-body{
+@import url('./config.css');
+
+body {
     font-family: var(--font-family);
     font-size: 1.5rem;
     box-sizing: border-box;
 }
 
-span{
-    cursor:default !important;
+span {
+    cursor: default !important;
 }
 
-main{
+main {
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -17,68 +19,64 @@ main{
 }
 
 /* Assets */
-.fw-semibold{
+.fw-semibold {
     font-weight: 600;
 }
 
-.mt-6{
+.mt-6 {
     margin-top: 10rem;
 }
 
-.mb-6{
+.mb-6 {
     margin-bottom: 10rem;
 }
 
-.text-primary{
+.text-primary {
     color: var(--color-primary) !important;
 }
 
-.btn-warning{
+.btn-warning {
     background-color: var(--color-primary) !important;
     border: none;
 }
 
-.btn-warning:hover{
+.btn-warning:hover {
     color: var(--color-secondary) !important;
 }
 
-.btn-outline-warning{
+.btn-outline-warning {
     border: 0.1rem solid var(--color-primary) !important;
     color: var(--color-primary) !important;
     transition: all 0.5s ease;
 }
 
-.btn-outline-warning:hover{
+.btn-outline-warning:hover {
     background-color: var(--color-primary) !important;
     color: white !important;
 }
 
-.bg-danger{
+.bg-danger {
     background-color: var(--color-secondary) !important;
 }
 
-.btn-secondary{
-    background-color: var(--color-primary) !important;
-    border: none;
-}
-
-.bg-dark{
+.bg-dark {
     background-color: var(--color-dark) !important;
 }
-.w-md-50{
+
+.w-md-50 {
     min-width: 50% !important;
 }
 
 /* Start my styles */
 /* -> Header background */
-.background{
+.background {
     position: relative;
     z-index: 0;
     background: url(/Assets/imgs/background.jpg) no-repeat center center;
     width: 100%;
     height: 100vh;
 }
-  
+
 .background::before {
     content: "";
     position: absolute;
@@ -91,26 +89,26 @@ main{
     z-index: -1;
 }
 
-.tag{
+.tag {
     color: var(--color-dark);
 }
 
 /* -> Main */
-.main{
+.main {
     padding: 20rem;
 }
 
 /* -> Guest infromation */
-.img{
+.img {
     height: 50rem;
     object-fit: cover;
 }
 
 /* -> Bets foods */
-.images > img{
+.images>img {
     width: 20rem;
 }
 
-.body-scroll{
+.body-scroll {
     padding-top: 8.6rem;
 }

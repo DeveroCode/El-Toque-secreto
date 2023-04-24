@@ -58,6 +58,11 @@ a {
     transition: all 0.3s ease;
 }
 
+.btn-secondary {
+    background-color: var(--color-primary) !important;
+    border: none;
+}
+
 a:hover {
     color: var(--color-primary) !important;
 }
